@@ -7,7 +7,7 @@ function calculatePay(hours, rate) {
     return Math.round(hours * rate);
   } else {
     const regPay = 8 * rate;
-    const overPay = (hours - 8) * (rate * 1.5) ;
+    const overPay = (hours - 8) * (rate * 2.0) ;
     return Math.round(regPay + overPay);
   }
   
